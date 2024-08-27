@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .nav-item a{
-    color: white;
+    color: #89BD9E;
 }
 .nav-item{
     font-size: 0.9rem;
@@ -16,7 +16,7 @@
     width: 100%;
 }
 .container-fluid{
-    background-color: #222121;
+    background-color: #F0C987;
     padding: 1rem;
     width: 100%;
 }
@@ -28,7 +28,7 @@
 
 .mi-boton {
     display: block;
-    color: #ffffff;
+    color: #89BD9E;
     border: none;
     cursor: pointer;
     transition: color 0.3s ease; /* Transición suave al pasar el mouse */
@@ -38,7 +38,7 @@
 }
 /* Estilo al pasar el mouse sobre el botón */
 .mi-boton:hover {
-    color: #77af3c;
+    color: #000000;
 }
 
 #logo {
