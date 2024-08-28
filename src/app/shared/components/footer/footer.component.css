@@ -4,34 +4,57 @@ footer {
 }
 
 .container-fluid {
-  background-color: #F0C987;
+  background-color: #F0C987; /* Fondo del footer */
+  padding: 2rem 0; /* Añadido padding para mejorar el espacio interno */
+
+}
+
+.container-fluid {
+  padding: 0 2rem; /* Ajusta el padding de los laterales */
 }
 
 .texto34 {
-  margin-left: 4rem;
+  margin-left: 0; /* Ajusta el margen según tus necesidades */
 }
 
-body {
-  background: #ff5f6d;
-  background: -webkit-linear-gradient(to right, #00001a, #00004d);
-  background: linear-gradient(to right, #00001a, #00004d);
-  min-height: 100vh;
+h6 {
+  font-size: 1.1rem; /* Tamaño de fuente para los encabezados */
+  font-weight: bold; /* Negrita */
 }
 
-#button-addon1 {
-  color: #ffc371;
+.text-muted {
+  color: #6c757d; /* Color de los enlaces */
+}
+
+a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+a:hover {
+  color: #000; /* Color al pasar el mouse sobre los enlaces */
+}
+
+.list-unstyled {
+  padding-left: 0; /* Elimina el padding por defecto de las listas */
+}
+
+.list-inline-item {
+  margin-right: 1rem; /* Espacio entre iconos sociales */
+}
+
+.list-inline-item a {
+  color: #000; /* Color de los iconos sociales */
+}
+
+.list-inline-item a:hover {
+  color: #007bff; /* Color al pasar el mouse sobre los iconos sociales */
 }
 
 i {
-  color: #000000;
-  font-size: 20px;}
-
-.form-control::placeholder {
-  font-size: 0.95rem;
-  color: #aaa;
+  font-size: 1.5rem; /* Tamaño de los iconos sociales */
 }
 
-.form-control.shadow-0:focus {
-  box-shadow: none;
+hr {
+  border: none; /* Elimina el borde por defecto del <hr> */
+  border-top: 1px solid #ddd; /* Estilo del borde superior */
 }
-
