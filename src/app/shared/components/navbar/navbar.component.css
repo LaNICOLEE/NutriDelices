@@ -1,30 +1,32 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.navbar-nav.mx-auto {
+    flex: 1;
+    justify-content: center;
 }
-.nav-item a{
+
+.navbar-nav.ms-auto {
+    margin-left: auto;
+}
+
+.nav-item a {
     color: #89BD9E;
-}
-.nav-item{
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1.2rem; /* Ajusta este valor para agrandar las letras */
+    font-weight: bold; /* Establece el texto en negrita */
 }
 
-.navbar{
+.nav-item {
+    font-size: 1.2rem; /* Ajusta este valor para agrandar las letras */
+    font-weight: bold; /* Establece el texto en negrita */
+}
+
+.navbar {
     width: 100%;
 }
-.container-fluid{
+
+.container-fluid {
     background-color: #F0C987;
     padding: 1rem;
     width: 100%;
 }
-
-.container-fluid a {
-    margin-right: 1rem;
-}
-
 
 .mi-boton {
     display: block;
@@ -33,10 +35,10 @@
     cursor: pointer;
     transition: color 0.3s ease; /* Transición suave al pasar el mouse */
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1.2rem; /* Ajusta este valor para agrandar las letras */
+    font-weight: bold; /* Establece el texto en negrita */
 }
-/* Estilo al pasar el mouse sobre el botón */
+
 .mi-boton:hover {
     color: #000000;
 }
@@ -46,5 +48,7 @@
 }
 
 .nav-link {
-    margin: 1rem;
+    margin: 0 6rem;
 }
+
+
