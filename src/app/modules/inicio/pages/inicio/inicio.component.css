@@ -35,7 +35,7 @@
   gap: 20px; /* Espacio entre botones */
 }
 
-/* Media queries */
+/* Media queries 
 @media (max-width: 768px) {
   .carousel-item {
     height: 200px;
@@ -51,7 +51,7 @@
     margin-top: 0;
   }
 }
-
+*/
 @media (max-width: 480px) {
   .carousel-item {
     height: 150px;
