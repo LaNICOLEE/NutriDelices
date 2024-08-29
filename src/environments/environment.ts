@@ -1,13 +1,13 @@
 export const environment = {
     production: false,
     firebaseConfig: {
-        apiKey: "AIzaSyBoOJkepPkloR-ZlYOYSvlFci9UyfvZ1d8",
-        authDomain: "nutri-plan-65687.firebaseapp.com",
-        projectId: "nutri-plan-65687",
-        storageBucket: "nutri-plan-65687.appspot.com",
-        messagingSenderId: "822762829178",
-        appId: "1:822762829178:web:f639d2f143aa622a3e52c3",
-        measurementId: "G-P6GPS52ST7"
-      }
+      apiKey: "AIzaSyCllYA5G3Hk9ccXN4pbDA8CrwwO-SnruO0",
+      authDomain: "nutridelices.firebaseapp.com",
+      projectId: "nutridelices",
+      storageBucket: "nutridelices.appspot.com",
+      messagingSenderId: "119424012652",
+      appId: "1:119424012652:web:3d18478c2f5f9aa829e349",
+      measurementId: "G-3LG00DR0TP"
+    }
 }
 
