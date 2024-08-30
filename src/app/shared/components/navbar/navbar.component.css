@@ -9,12 +9,12 @@
 
 .nav-item a {
     color: #89BD9E;
-    font-size: 1.2rem; /* Ajusta este valor para agrandar las letras */
+    font-size: 1.8rem; /* Ajusta este valor para agrandar las letras */
     font-weight: bold; /* Establece el texto en negrita */
 }
 
 .nav-item {
-    font-size: 1.2rem; /* Ajusta este valor para agrandar las letras */
+    font-size: 1.8rem; /* Ajusta este valor para agrandar las letras */
     font-weight: bold; /* Establece el texto en negrita */
 }
 
@@ -35,7 +35,7 @@
     cursor: pointer;
     transition: color 0.3s ease; /* Transición suave al pasar el mouse */
     text-decoration: none;
-    font-size: 1.2rem; /* Ajusta este valor para agrandar las letras */
+    font-size: 1.8rem; /* Ajusta este valor para agrandar las letras */
     font-weight: bold; /* Establece el texto en negrita */
 }
 

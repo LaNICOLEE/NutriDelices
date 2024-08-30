@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
+
 @Component({
   selector: 'app-recetas',
   templateUrl: './recetas.component.html',
