@@ -1,33 +1,142 @@
 <app-navbar></app-navbar>
 <section class="wrapper">
     <div class="container-fostrap">
-        <br><br><br><br><br><br><br><br><br>
+        <!-- Se agregaron múltiples saltos de línea con <br>, que generalmente no son recomendables.
+        En su lugar, se puede utilizar padding o margin en CSS para agregar espacio. -->
+
+        <br><br><br><br><br><br><br><br><br> 
         <div class="content">
-            
             <div class="container">
-              
-                <div class="botones">
-                    
-                  <div><button class="button_Horarios" routerLink="/recetas"><img src="../../../assets/breakfast-icon.png" width="110px" height="110px"></button>
-                  <br>
-                  <p style="text-align: center; font-size: 25px;"><b class="texto">DESAYUNO</b></p>
-                  </div>
-                  <div><button class="button_Horarios" routerLink="/recetas"><img src="../../../assets/lunch-icon.png" width="110px" height="110px" href="../../../../pages/recetas/desayunos/desayunos.component.html"></button>
-                  <br>
-                  <p style="text-align: center; font-size: 25px;"><b class="texto">ALMUERZO</b></p>
-                  </div>
-                  <div><button class="button_Horarios" routerLink="/recetas"><img src="../../../assets/snack-icon.png" width="110px" height="110px" href="../../../../pages/recetas/almuerzos/almuerzos.component.html"></button>
-                  <br>
-                  <p style="text-align: center; font-size: 25px;" href="../../../../pages/recetas/meriendas/meriendas.component.html"><b class="texto">MERIENDA</b></p>
-                  </div>
-                  <div><button class="button_Horarios" routerLink="/recetas"><img src="../../../assets/dinner-icon.png" width="110px" height="110px" href="../../../../pages/recetas/cenas/cenas.component.html"></button>
-                  <br>
-                  <p style="text-align: center; font-size: 25px;"><b class="texto">CENA</b></p>
-                  </div>
+                <div class="botones" style="display: flex; justify-content: center; gap: 20px;">
+                    <!-- Se añadió 'display: flex', 'justify-content: center' y 'gap: 20px;' en línea
+                    para centrar los botones y agregar espacio entre ellos -->
+
+                    <!-- Primer botón: Desayuno -->
+                    <div>
+                        <button class="button_Horarios" routerLink="/recetas">
+                            <img src="../../../assets/breakfast-icon.png" width="110px" height="110px">
+                        </button>
+                        <br>
+                        <p style="text-align: center; font-size: 25px;">
+                            <b class="texto">DESAYUNO</b>
+                        </p>
+                    </div>
+
+                    <!-- Segundo botón: Almuerzo -->
+                    <div>
+                        <button class="button_Horarios" routerLink="/recetas">
+                            <img src="../../../assets/lunch-icon.png" width="110px" height="110px">
+                        </button>
+                        <br>
+                        <p style="text-align: center; font-size: 25px;">
+                            <b class="texto">ALMUERZO</b>
+                        </p>
+                    </div>
+
+                    <!-- Tercer botón: Merienda -->
+                    <div>
+                        <button class="button_Horarios" routerLink="/recetas">
+                            <img src="../../../assets/snack-icon.png" width="110px" height="110px">
+                        </button>
+                        <br>
+                        <p style="text-align: center; font-size: 25px;">
+                            <b class="texto">MERIENDA</b>
+                        </p>
+                    </div>
+
+                    <!-- Cuarto botón: Cena -->
+                    <div>
+                        <button class="button_Horarios" routerLink="/recetas">
+                            <img src="../../../assets/dinner-icon.png" width="110px" height="110px">
+                        </button>
+                        <br>
+                        <p style="text-align: center; font-size: 25px;">
+                            <b class="texto">CENA</b>
+                        </p>
+                    </div>
                 </div>
-          </div>
+            </div>
         </div>
-        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br> <!-- Igual que antes, se sugiere usar CSS en lugar de <br> -->
     </div>
+
+    <!-- Tarjetas -->
+    <div class="card">
+        <img src="assets/images/Medialunas.jpg" alt="Descripción de la imagen" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Pechuga De Pollo Con Ensalada</h3>
+            <div class="recipe">
+                <h2>Ingredientes</h2>
+                <h3>Para el pollo:</h3>
+                <ul class="ingredients">
+                    <li>2 pechugas de pollo</li>
+                    <li>2 cucharadas de aceite de oliva</li>
+                    <li>1 diente de ajo picado</li>
+                    <li>1 cucharadita de pimentón dulce</li>
+                    <li>1 cucharadita de orégano</li>
+                    <li>Sal y pimienta al gusto</li>
+                    <li>Jugo de 1 limón</li>
+                </ul>
+
+                <h3>Para la ensalada:</h3>
+                <ul class="ingredients">
+                    <li>2 tazas de lechuga, lavada y escurrida</li>
+                    <li>1 tomate, cortado en cubos</li>
+                    <li>1 pepino, cortado en rodajas</li>
+                    <li>1 zanahoria, rallada</li>
+                    <li>1/2 cebolla morada, en rodajas finas</li>
+                    <li>1/2 aguacate, en cubos (opcional)</li>
+                    <li>2 cucharadas de aceite de oliva</li>
+                    <li>1 cucharada de vinagre (blanco o de manzana)</li>
+                    <li>Sal al gusto</li>
+                </ul>
+
+                <h2>Instrucciones</h2>
+                <ol class="instructions">
+                    <li><strong>Marinar y cocinar el pollo:</strong> En un bol, mezcla el aceite de oliva, el ajo picado, el pimentón, el orégano, sal, pimienta y el jugo de limón. Cubre las pechugas de pollo con esta mezcla y deja marinar durante al menos 30 minutos. Calienta una sartén a fuego medio-alto y cocina las pechugas de pollo durante 5-7 minutos por lado, o hasta que estén doradas y cocidas por completo.</li>
+                    <li><strong>Preparar la ensalada:</strong> En un bol grande, mezcla la lechuga, el tomate, el pepino, la zanahoria, la cebolla morada y el aguacate (si lo usas). Aliña la ensalada con aceite de oliva, vinagre y sal al gusto. Revuelve bien para combinar todos los ingredientes.</li>
+                    <li><strong>Servir:</strong> Corta la pechuga de pollo en tiras o en cubos. Sirve el pollo sobre la ensalada o al lado, según tu preferencia.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="assets/images/Muffins.jpg" alt="Descripción de la imagen" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Muffins de Verduras</h3> <!-- Corrección: Se agregó un título que faltaba -->
+            <div class="recipe">
+                <h2>Ingredientes</h2>
+                <ul class="ingredients">
+                    <li>1 taza de harina de trigo</li>
+                    <li>1/2 taza de harina de maíz</li>
+                    <li>1 cucharadita de polvo de hornear</li>
+                    <li>1/2 cucharadita de bicarbonato de sodio</li>
+                    <li>1/2 cucharadita de sal</li>
+                    <li>1/2 taza de leche</li>
+                    <li>1/4 taza de aceite de oliva</li>
+                    <li>2 huevos</li>
+                    <li>1 taza de espinacas frescas, picadas</li>
+                    <li>1/2 taza de zanahoria rallada</li>
+                    <li>1/2 pimiento rojo, picado</li>
+                    <li>1/4 taza de queso rallado (opcional)</li>
+                    <li>Pimienta al gusto</li>
+                </ul>
+
+                <h2>Instrucciones</h2>
+                <ol class="instructions">
+                    <li>Precalienta el horno a 180°C (350°F) y engrasa un molde para muffins o utiliza cápsulas de papel.</li>
+                    <li>En un bol grande, mezcla las harinas, el polvo de hornear, el bicarbonato y la sal.</li>
+                    <li>En otro bol, bate la leche, el aceite de oliva y los huevos hasta que estén bien combinados.</li>
+                    <li>Agrega los ingredientes húmedos a los secos y mezcla hasta que estén apenas combinados.</li>
+                    <li>Incorpora las espinacas, la zanahoria, el pimiento y el queso rallado si lo usas. Añade pimienta al gusto.</li>
+                    <li>Vierte la mezcla en los moldes para muffins, llenándolos hasta 3/4 de su capacidad.</li>
+                    <li>Hornea durante 20-25 minutos o hasta que al insertar un palillo en el centro salga limpio.</li>
+                    <li>Deja enfriar los muffins en el molde durante 5 minutos antes de transferirlos a una rejilla para que se enfríen por completo.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
 </section>
 <app-footer></app-footer>

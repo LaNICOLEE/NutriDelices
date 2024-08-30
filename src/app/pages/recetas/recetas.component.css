@@ -1,38 +1,161 @@
-.body {
-  background-image: url('src/assets/images/Panqueques.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-.container {
+ 
+body {
+  height: 100vh;
+  margin: 0;
   display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
+
+.container-fostrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.content {
+  text-align: center;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .button_Horarios {
   background-color: #89BD9E;
   color: black;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  margin: 4px 2px auto;
+  margin: 4px 2px;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: none;
-  margin: 50px;
+  transition: background-color 0.3s ease;
 }
-.botones {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los botones se ajusten al ancho del contenedor */
-  justify-content: center; /* Centra los botones horizontalmente */
-  align-items: center; /* Centra los botones verticalmente */
-  gap: 20px; /* Espacio entre botones */
+
+.button_Horarios img {
+  display: block;
+  margin: 0 auto 10px;
 }
-body {
-  background-image: url('src/assets/images/Panqueques.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+
+.button_Horarios:hover {
+  background-color: #72a88b;
+}
+
+.texto {
+  color: #000000;
+  font-size: 1.2em;
+}
+
+.card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid #89BD9E;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.65em;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 700;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.card-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 32px;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: #DB4C40;
+}
+
+.recipe {
+  background: #F0C987;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe h2 {
+  color: #000000;
+}
+
+.ingredients, .instructions {
+  margin-bottom: 20px;
+}
+
+.ingredients ul, .instructions ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ingredients li, .instructions li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.ingredients li::before, .instructions li::before {
+  content: "•";
+  color: #000000;
+  margin-right: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .botones {
+      flex-direction: column;
+  }
+
+  .card {
+      width: 100%;
+      margin: 20px 0;
+  }
 }

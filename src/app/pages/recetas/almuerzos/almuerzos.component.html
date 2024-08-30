@@ -1,46 +1,13 @@
-<section class="wrapper">
-    <div class="container-fostrap">
-        <div class="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-4" *ngFor="let receta of recetasAlmuerzo$ | async , let id=index" class="col columnas">
-                        <div class="card">
-                            <a class="img-card" href="">
-                            <img [src]="receta.imagen"/>
-                          </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    {{receta.nombre}}
-                                </h4>
-                            </div>
-                            <div class="card-read-more">
-                                <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-link btn-block" data-bs-toggle="modal"[attr.data-bs-target]="'#exampleModala'+id">
-                                        VER RECETA
-                                    </button>
-                                    
-                                    <!-- Modal -->
-                                    <div class="modal fade" [id]="'exampleModala'+id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h1 class="modal-title fs-5" [id]="'exampleModalLabel'+id">{{receta.nombre}}</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                            {{receta.descripcion}}
-                                            </div>
-                                            <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<app-navbar></app-navbar>
+<body>
+    
+<div class="card">
+    <img src="assets/images/Fideos.jpg" alt="Descripción de la imagen" class="card-img">
+    <div class="card-content">
+        <h3 class="card-title">Fideos De Verduras</h3>
+        <p class="card-text">Sumérgete en una experiencia de sabor y nutrición con nuestros fideos de espinacas, elaborados con ingredientes de alta calidad y un toque de verdor natural. Estos fideos no solo destacan por su vibrante color verde, sino también por su aporte nutricional, gracias a las espinacas frescas que les dan un sabor suave y un perfil de nutrientes equilibrado. Ideales para preparar platos ligeros y saludables, son una opción versátil que combina perfectamente con tus salsas y acompañamientos favoritos, aportando un toque fresco y nutritivo a cualquier comida.</p>
+        <a href="/recetas" class="card-btn">Ver Receta</a>
     </div>
-</section>
+</div>
+</body>
+<app-footer></app-footer>

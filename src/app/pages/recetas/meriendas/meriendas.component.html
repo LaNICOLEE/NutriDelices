@@ -1,47 +1,13 @@
-
-<section class="wrapper">
-    <div class="container-fostrap">
-        <div class="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-4" *ngFor="let receta of recetasMerienda$ | async, let id=index, id+3" class="col columnas">
-                        <div class="card">
-                            <a class="img-card" href="">
-                            <img [src]="receta.imagen"/>
-                          </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    {{receta.nombre}}
-                                </h4>
-                            </div>
-                            <div class="card-read-more">
-                                <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-link btn-block" data-bs-toggle="modal"[attr.data-bs-target]="'#exampleModala'+id+3">
-                                        VER RECETA
-                                    </button>
-                                    
-                                    <!-- Modal -->
-                                    <div class="modal fade" [id]="'exampleModala'+id+3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h1 class="modal-title fs-5" [id]="'exampleModalLabel'+id+3">{{receta.nombre}}</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                            {{receta.descripcion}}
-                                            </div>
-                                            <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<app-navbar></app-navbar>
+<body>
+    
+<div class="card">
+    <img src="assets/images/Medialunas.jpg" alt="Descripción de la imagen" class="card-img">
+    <div class="card-content">
+        <h3 class="card-title">Medialunas De Harina Integral</h3>
+        <p class="card-text">Disfruta de nuestras irresistibles medialunas de harina integral, un delicioso giro en el clásico que combina el sabor suave y mantecoso con la riqueza y el valor nutricional de la harina integral. Estas medialunas son esponjosas por dentro, ligeramente crujientes por fuera, y tienen un sabor naturalmente dulce que proviene de ingredientes de alta calidad. Perfectas para un desayuno saludable o un tentempié nutritivo, son la opción ideal para quienes buscan un equilibrio entre placer y bienestar.</p>
+        <a href="/recetas" class="card-btn">Ver Receta</a>
     </div>
-</section>
+</div>
+</body>
+<app-footer></app-footer>

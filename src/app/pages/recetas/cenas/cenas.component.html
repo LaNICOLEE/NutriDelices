@@ -1,47 +1,13 @@
-
-<section class="wrapper">
-    <div class="container-fostrap">
-        <div class="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-4" *ngFor="let receta of recetasCena$ | async , let id=index, id+1" class="col columnas">
-                        <div class="card">
-                            <a class="img-card" href="">
-                            <img [src]="receta.imagen"/>
-                          </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    {{receta.nombre}}
-                                </h4>
-                            </div>
-                            <div class="card-read-more">
-                                <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-link btn-block" data-bs-toggle="modal"[attr.data-bs-target]="'#exampleModala'+id+1">
-                                        VER RECETA
-                                    </button>
-                                    
-                                    <!-- Modal -->
-                                    <div class="modal fade" [id]="'exampleModala'+id+1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h1 class="modal-title fs-5" [id]="'exampleModalLabel'+id+1">{{receta.nombre}}</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                            {{receta.descripcion}}
-                                            </div>
-                                            <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<app-navbar></app-navbar>
+<body>
+    
+<div class="card">
+    <img src="assets/images/Tarta.jpg" alt="Descripción de la imagen" class="card-img">
+    <div class="card-content">
+        <h3 class="card-title">Tarta De Verduras Con Huevo</h3>
+        <p class="card-text">Descubre nuestra tarta de verduras con huevo, una combinación perfecta de sabores frescos y nutritivos. Cada bocado está lleno de una mezcla colorida de verduras salteadas, como espinacas, zanahorias y calabacines, enriquecida con huevos frescos para crear una textura suave y cremosa. La base crujiente de la tarta complementa maravillosamente el relleno, haciendo de esta receta una opción deliciosa y saludable para cualquier comida del día. Ideal para compartir en familia o disfrutar como plato principal, esta tarta es un deleite equilibrado y reconfortante.</p>
+        <a href="/recetas" class="card-btn">Ver Receta</a>
     </div>
-</section>
+</div>
+</body>
+<app-footer></app-footer>

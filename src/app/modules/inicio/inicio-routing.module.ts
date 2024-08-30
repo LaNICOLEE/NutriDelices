@@ -17,6 +17,7 @@ const routes: Routes = [
   {path:'almuerzos', component : AlmuerzosComponent},
   {path:'meriendas', component : MeriendasComponent},
   {path:'cenas', component : CenasComponent}
+  
 
 ];
 
