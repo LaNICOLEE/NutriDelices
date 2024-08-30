@@ -43,10 +43,8 @@ export class TableComponent {
   }
 
   // Método asíncrono para agregar una nueva receta
-  async agregarReceta(){
-    // Verificamos si el formulario es válido
-    if (this.receta.valid){
-      // Creamos un objeto receta con los valores del formulario
+  async agregarReceta() {
+    if (this.receta.valid) {
       let nuevaReceta: Receta = {
         idProducto: '',
         nombre: this.receta.value.nombre!,
@@ -55,19 +53,22 @@ export class TableComponent {
         descripcion: this.receta.value.descripcion!,
         categoria: this.receta.value.categoria!
       };
-
-      // Llamamos al servicio CRUD para crear la nueva receta
+  
+      
       await this.servicioCrud.crearReceta(nuevaReceta)
-      .then(receta => {
-        // Si la creación es exitosa, mostramos un mensaje
-        alert("Ha agregado una nueva receta con exito!");
-      })
-      .catch(error => {
-        // Si hay un error, mostramos un mensaje con el error
-        alert("Hubo un error al cargar la nueva receta! \n"+error)
-      })
+        .then(receta => {
+          alert("Ha agregado una nueva receta con éxito!");
+          let datos: Receta = this.recetaSeleccionada as Receta;
+; // Actualiza la lista con la nueva receta
+          this.receta.reset(); // Limpia el formulario para nuevas entradas
+        })
+        .catch(error => {
+          alert("Hubo un error al cargar la nueva receta! \n" + error);
+        });
     }
   }
+  
+  
 
   // Método para mostrar el formulario de edición con los datos de la receta seleccionada
   mostrarEditar(recetaSeleccionada: Receta){
@@ -100,7 +101,8 @@ export class TableComponent {
     this.servicioCrud.modificarReceta(this.recetaSeleccionada.idProducto, datos)
     .then(receta => {
       // Si la modificación es exitosa, mostramos un mensaje
-      alert("La receta fue modificada con exito!")
+      alert("La receta fue modificada con exito!");
+      this.receta.reset(); // Limpia el formulario después de la edición
     })
     .catch(error => {
       // Si hay un error, mostramos un mensaje con el error
@@ -116,16 +118,13 @@ export class TableComponent {
   }
 
   // Método para eliminar una receta
-  borrarReceta(){
-    // Llamamos al servicio CRUD para eliminar la receta
+  borrarReceta() {
     this.servicioCrud.eliminarReceta(this.recetaSeleccionada.idProducto)
-    .then(respuesta => {
-      // Si la eliminación es exitosa, mostramos un mensaje
-      alert("La receta se ha eliminado correctamente");
-    })
-    .catch(error => {
-      // Si hay un error, mostramos un mensaje con el error
-      alert("No se ha podido eliminar la receta \n"+error)
-    })
-  }  
-}
+      .then(respuesta => {
+        this.coleccionReceta = this.coleccionReceta.filter(r => r.idProducto !== this.recetaSeleccionada.idProducto);
+        alert("La receta se ha eliminado correctamente");
+      })
+      .catch(error => {
+        alert("No se ha podido eliminar la receta \n" + error);
+      });
+  }}

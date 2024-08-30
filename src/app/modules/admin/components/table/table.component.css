@@ -2,3 +2,84 @@
     text-align: center;
     justify-content: center;
 }
+
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+/* Imagen dentro de la tabla */
+.table img {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los botones */
+.btn-outline-success,
+.btn-outline-danger,
+.btn-outline-primary,
+.btn-outline-secondary {
+    margin-right: 5px;
+}
+
+/* Iconos en los botones */
+button mat-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Estilos para el modal */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Inputs y selects en el modal */
+.modal-body .form-control {
+    margin-bottom: 1rem;
+}
+
+/* Botones en el modal */
+.modal-footer .btn {
+    margin-left: 0.5rem;
+}
+
+/* Estilos para la imagen dentro del modal */
+.modal-body img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
