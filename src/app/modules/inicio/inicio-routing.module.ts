@@ -8,6 +8,7 @@ import { DesayunosComponent } from 'src/app/pages/recetas/desayunos/desayunos.co
 import { AlmuerzosComponent } from 'src/app/pages/recetas/almuerzos/almuerzos.component';
 import { MeriendasComponent } from 'src/app/pages/recetas/meriendas/meriendas.component';
 import { CenasComponent } from 'src/app/pages/recetas/cenas/cenas.component';
+import { NosotrosComponent } from '../nosotros/pages/nosotros/nosotros.component';
 //Agregamos las rutas de inicio
 const routes: Routes = [
   {path: "cards", component : CardsComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path:'desayunos', component : DesayunosComponent},
   {path:'almuerzos', component : AlmuerzosComponent},
   {path:'meriendas', component : MeriendasComponent},
-  {path:'cenas', component : CenasComponent}
+  {path:'cenas', component : CenasComponent},
+  {path:'nosotros', component : NosotrosComponent}
   
 
 ];
